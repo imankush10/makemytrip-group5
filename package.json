@@ -9,6 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "commonjs",
   "devDependencies": {
     "@cucumber/cucumber": "^12.8.2",
     "@playwright/test": "^1.59.1",
