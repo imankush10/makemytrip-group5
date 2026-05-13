@@ -3,27 +3,22 @@ class CounsellingPage {
         this.page   = page
         this.expect = expect
 
-        // ── Nav ───────────────────────────────────────────────────────────────
         this.counsellingTab        = page.locator('(//div[@id="_innerNav"]/ul/li)[7]')
         this.careersAfter12thLink  = page.locator('(//div[@id="_innerNav"]/ul/li)[7]//li[@key="Careers after 12th"]')
         this.scienceLink           = page.locator('((//div[@id="_innerNav"]/ul/li)[7]//li[@key="Careers after 12th"]//li)[2]')
 
-        // ── Stream page ───────────────────────────────────────────────────────
         this.streamHeading         = page.locator('//h2[@class="stream-title"]')
         this.maxChoiceText         = page.locator('//h1[@class="choice-option"]/strong')
         this.allChoiceInputs       = page.locator('//ul[@id="stream-details"]//input')
         this.continueBtn           = page.locator('//input[@value="Continue"]')
         this.closePopupBtn         = page.locator('//div[@id="close2"]')
 
-        // ── Results page ──────────────────────────────────────────────────────
         this.careersFoundHeading   = page.locator('//div[@class="suggestion-header"]/h1')
     }
 
     async launch(url) {
         await this.page.goto(url)
     }
-
-    // ── Nav actions ───────────────────────────────────────────────────────────
 
     async clickCounsellingTab() {
         await this.counsellingTab.click()
@@ -36,8 +31,6 @@ class CounsellingPage {
     async clickScienceLink() {
         await this.scienceLink.click()
     }
-
-    // ── Choice selection ──────────────────────────────────────────────────────
 
     async selectMaxAllowedChoices() {
         let maxText = await this.maxChoiceText.textContent()
@@ -58,8 +51,6 @@ class CounsellingPage {
     async closePopup() {
         await this.closePopupBtn.click()
     }
-
-    // ── Assertions ────────────────────────────────────────────────────────────
 
     async verifyStreamHeading(text) {
         await this.expect(this.streamHeading).toContainText(text)

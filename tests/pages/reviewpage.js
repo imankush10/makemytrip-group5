@@ -3,11 +3,9 @@ class ReviewPage {
         this.page   = page
         this.expect = expect
 
-        // ── Main page ─────────────────────────────────────────────────────────
         this.writeReviewLink = page.locator('//a[text()="Write Review"]')
 
-        // ── Review form - page 1 ──────────────────────────────────────────────
-        this.emailTF          = null  // initialized after new tab opens
+        this.emailTF          = null 
         this.fullNameTF       = null
         this.genderSF         = null
         this.collegeTF        = null
@@ -21,11 +19,8 @@ class ReviewPage {
         this.nextBtn          = null
         this.phoneErrorMsg    = null
 
-        // ── Review form - page 2 ──────────────────────────────────────────────
         this.submitBtn        = null
     }
-
-    // ── Called after new tab opens ────────────────────────────────────────────
 
     initNewPage(newPage) {
         this.newPage = newPage
@@ -46,7 +41,6 @@ class ReviewPage {
         this.submitBtn     = newPage.locator('//input[@type="submit"]')
     }
 
-    // ── Page 1 actions ────────────────────────────────────────────────────────
 
     async fillEmail(email) {
         await this.emailTF.fill(email)
@@ -95,7 +89,6 @@ class ReviewPage {
         await this.nextBtn.click()
     }
 
-    // ── Page 2 actions ────────────────────────────────────────────────────────
 
     async fillReviewSection(sectionIndex, reviewText) {
         await this.newPage.locator(`//form/div[${sectionIndex}]//textarea`).fill(reviewText)
@@ -130,7 +123,6 @@ class ReviewPage {
         await this.submitBtn.click()
     }
 
-    // ── Assertions ────────────────────────────────────────────────────────────
 
     async verifyPhoneErrorMessage(expectedText) {
         await this.expect(this.phoneErrorMsg).toContainText(new RegExp(expectedText))
