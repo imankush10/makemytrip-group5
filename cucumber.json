@@ -1,8 +1,8 @@
 {
-  "default":{
-    "features:": "tests/features/*.feature",
-    "require": ["tests/steps/*.js"],
-    "format": ["progress", "html:test-results/report.html"],
-    "publishQuiet": true
-  }
+    "default": {
+      "features": "tests/features/*.feature",
+      "require": ["tests/steps/*.js"],
+      "format": ["progress", "html:test-results/report.html"],
+      "publishQuiet": true
+    }
 }
