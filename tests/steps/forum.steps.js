@@ -1,5 +1,7 @@
 const { Given, When, Then } = require("@cucumber/cucumber");
 const { expect } = require("@playwright/test");
+const fs = require("fs");
+const path = require("path");
 const { HomePage } = require("../pages/home.page.js");
 const { DiscussionsPage } = require("../pages/discussions.page.js");
 const { QuestionPage } = require("../pages/question.page.js");
@@ -7,6 +9,18 @@ const { AnswerModal } = require("../pages/answer-modal.page.js");
 
 const captureBug = async (world, name, description) => {
   const buffer = await world.page.screenshot({ fullPage: true });
+  const screenshotsDir = path.resolve(process.cwd(), "screenshots");
+  if (!fs.existsSync(screenshotsDir)) {
+    fs.mkdirSync(screenshotsDir);
+  }
+
+  const safeName = String(name || "bug")
+    .toLowerCase()
+    .replace(/[^a-z0-9_-]/g, "-")
+    .slice(0, 60);
+  const fileName = `${safeName}-${Date.now()}.png`;
+  fs.writeFileSync(path.join(screenshotsDir, fileName), buffer);
+
   await world.attach(buffer, "image/png");
   await world.attach(`BUG: ${description}`, "text/plain");
 };
