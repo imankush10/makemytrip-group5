@@ -1,0 +1,18 @@
+{
+    "url": "https://www.shiksha.com/",
+    "email": "jorjy@gmail.com",
+    "fullName": "jorj George",
+    "gender": "Male",
+    "collegeName": "iit",
+    "courseInput": "btech",
+    "graduationYear": "2026",
+    "upi": "jorj@okiciciici",
+    "invalidMobile": "9876543210",
+    "validMobile": "9857511112",
+    "review": "The atomic bomb, a weapon of unparalleled destruction, irrevocably altered the course of history in August 1945. Developed through the Allied Manhattan Project, its creation was driven by fear of Nazi atomic research. On August 6, 1945, the USA dropped \"Little Boy\" on Hiroshima, followed by \"Fat Man\" on Nagasaki on August 9. These detonations, which caused instant death for over 100,000 civilians and massive infrastructural damage, brought a swift end to World War II but initiated a new era of nuclear terror and geopolitical stalemate",
+    "shortComment": "mew",
+    "feeAmount": "200000",
+    "additionalComment": "Once upon a time there was a vampire, who lived in a dark castle on top of a hill",
+    "expectedPhoneError": "You can submit max 2 reviews using the same phone number",
+    "screenshotPath": "review_submission.png"
+}

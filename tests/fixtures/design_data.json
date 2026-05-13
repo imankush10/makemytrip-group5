@@ -1,0 +1,10 @@
+{
+    "url": "https://www.shiksha.com/",
+    "expectedGameDesignHeading": "Game Design",
+    "expectedPercentageValue": "0.01",
+    "expectedExamInPopup": "CUSAT CAT",
+    "minRatingThreshold": 4.5,
+    "expectedLastExam": "CUCET Chandigarh University",
+    "scrollWaitMs": 420,
+    "generalWaitMs": 500
+}
