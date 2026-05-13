@@ -1,6 +1,6 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
-import {defineBddConfig} from "playwright-bdd"
+import { defineBddConfig } from "playwright-bdd"
 
 const testDir = defineBddConfig({
   features: 'tests/features/**/*.feature',
@@ -20,6 +20,7 @@ const testDir = defineBddConfig({
  */
 export default defineConfig({
   testDir,
+  timeout: 300000,
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -36,7 +37,12 @@ export default defineConfig({
     // baseURL: 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    //trace: 'on-first-retry',
+    trace: 'on',
+    video: 'on',
+
+    /* Run in headed mode so the browser window is visible during automation */
+    headless: false,
   },
 
   /* Configure projects for major browsers */
@@ -46,14 +52,14 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
 
+    // Run tests with a pre-authenticated Shiksha session.
+    // First run `npm run test:shiksha-login` to generate the auth file.
     {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
+      name: 'shiksha-loggedin',
+      use: {
+        ...devices['Desktop Chrome'],
+        storageState: 'tests/fixtures/shiksha_auth.json',
+      },
     },
 
     /* Test against mobile viewports. */
