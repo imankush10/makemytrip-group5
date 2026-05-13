@@ -1,22 +1,27 @@
 {
-  "name": "play-test",
+  "name": "mmt-test-g5",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "auth:cookies": "node scripts/auth/get-cookies.js",
-    "test:pw": "playwright test",
-    "test:cucumber": "cucumber-js tests/features/**/*.feature --config cucumber.cjs"
+    "test": "cucumber-js tests/features/**/*.feature",
+    "test:firefox": "cross-env BROWSER=firefox cucumber-js tests/features/**/*.feature",
+    "test:webkit": "cross-env BROWSER=webkit cucumber-js tests/features/**/*.feature",
+    "test:shiksha": "npx bddgen && npx playwright test --grep \"Shiksha Registration\" --project=chromium --headed",
+    "test:shiksha-login": "npx bddgen && npx playwright test --grep \"Shiksha Login\" --project=chromium --headed",
+    "test:shiksha-loggedin": "npx bddgen && npx playwright test --project=shiksha-loggedin --headed",
+    "test:study-abroad": "npx bddgen && npx playwright test --grep \"Shiksha Study Abroad\" --project=shiksha-loggedin --headed",
+    "test:shiksha-exams": "npx bddgen && npx playwright test --grep \"Shiksha Exams\" --project=shiksha-loggedin --headed"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@cucumber/cucumber": "^12.8.2",
     "@playwright/test": "^1.59.1",
-    "@types/node": "^25.6.0"
-  },
-  "dependencies": {
-    "@cucumber/cucumber": "^12.8.3"
+    "@types/node": "^25.6.0",
+    "cross-env": "^10.1.0",
+    "playwright-bdd": "^8.5.0"
   }
 }

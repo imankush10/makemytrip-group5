@@ -5,6 +5,7 @@ const path = require('path');
 
 setDefaultTimeout(120 * 1000);
 
+// ─── World ────────────────────────────────────────────────────────────────────
 class PlaywrightWorld extends World {
   constructor(options) {
     super(options);
@@ -16,10 +17,12 @@ class PlaywrightWorld extends World {
 }
 setWorldConstructor(PlaywrightWorld);
 
-const STORAGE_STATE_PATH = path.resolve(process.cwd(), 'storageState2.json');
+// ─── Config ───────────────────────────────────────────────────────────────────
+const STORAGE_STATE_PATH = path.resolve(process.cwd(), 'storageState.json');
 const HEADLESS  = process.env.HEADLESS   === 'true';
 const SLOW_MO   = Number(process.env.SLOW_MO_MS ?? 200);
 
+// ─── Browser lifecycle (shared across all scenarios) ─────────────────────────
 let browser;
 
 BeforeAll(async function () {
@@ -30,6 +33,7 @@ AfterAll(async function () {
   await browser?.close();
 });
 
+// ─── Context + page lifecycle (per scenario) ─────────────────────────────────
 Before(async function () {
   const contextOptions = {
     viewport: { width: 1440, height: 900 },

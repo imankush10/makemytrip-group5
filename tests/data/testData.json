@@ -1,0 +1,11 @@
+{
+  "catPredictor": {
+    "firstScore": "136",
+    "secondScore": "140"
+  },
+  "filters": {
+    "locations": ["Delhi", "Bangalore", "Kolkata", "Mumbai"],
+    "fees": "> 5 Lakh",
+    "specialization": "Business Analytics"
+  }
+}
