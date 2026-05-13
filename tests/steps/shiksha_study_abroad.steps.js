@@ -97,10 +97,6 @@ When('I click the Compare button on the university page', async function () {
 });
 
 
-When('I click Compare Now', async function () {
-    const { page } = this;
-    await studyAbroadPage.clickCompareNow();
-});
 
 Then('the comparison view should be displayed', async function () {
     const { page } = this;

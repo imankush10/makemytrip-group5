@@ -1,3 +1,4 @@
+@shiksha_login
 Feature: Shiksha Login
   As a registered user on shiksha.com
   I want to log in using my email address

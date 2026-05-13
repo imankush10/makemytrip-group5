@@ -1,3 +1,4 @@
+@shiksha_exams
 Feature: Shiksha Exams
   As a student exploring exams on Shiksha
   I want to handle broken links gracefully, search for exams, and download past question papers

@@ -1,3 +1,4 @@
+@shiksha_study_abroad
 Feature: Shiksha Study Abroad - Top Universities
   As a student interested in studying abroad
   I want to explore top-ranked universities on Shiksha
