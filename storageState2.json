@@ -1,0 +1,316 @@
+{
+  "cookies": [
+    {
+      "name": "countryId",
+      "value": "IN",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "visitorId",
+      "value": "5a15a54c1778683103v100v2047741740",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": 1813243104.896677,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "visitorSessionId",
+      "value": "5a15a54c1778683103v100v2047741740s57966279",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": 1778684916.790555,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "gptAccessEnabled",
+      "value": "true",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": 1779287905,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "experimentName",
+      "value": "shikshaGPT",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": 1779287905,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "hpTab",
+      "value": "mba",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ispwa",
+      "value": "true",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "timerPromptIndex",
+      "value": "0%7C1781275105614",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": 1781275105,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "et_sam",
+      "value": "0",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": 1778684915.651352,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "uilp_ab",
+      "value": "0",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": 1778684915.651459,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "user_session_data",
+      "value": "eyJwYWdlSWRlbnRpZmllciI6ImhvbWVQYWdlIiwicGFnZUVudGl0eUlkIjoiMCIsImNoaWxkUGFnZUlkZW50aWZpZXIiOiJob21lUGFnZSIsInNvdXJjZSI6ImRpcmVjdCIsImRhdGVUaW1lIjoiMjAyNi0wNS0xMyAyMDowODoyMyIsImRldmljZVR5cGUiOiJEZXNrdG9wIiwiY29ob3J0IjpbXX0=",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": 1778685215.651527,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_fbp",
+      "value": "fb.1.1778683106084.920375077685619277",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": 1786459113,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__gads",
+      "value": "ID=d2efc2802d6ddaa2:T=1778683104:RT=1778683104:S=ALNI_MbICxgrxLbelarnor-6X77JyLPZ_A",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": 1812379104,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__gpi",
+      "value": "UID=00001384ad8db035:T=1778683104:RT=1778683104:S=ALNI_MbDRI-MgXX5W1WML0O7ChAsfxwA8g",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": 1812379104,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__eoi",
+      "value": "ID=624a5367692dc371:T=1778683104:RT=1778683104:S=AA-AfjZVRggcqhLOBdVIwdq56JhL",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": 1794235104,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "IDE",
+      "value": "AHWqTUkiXCE9P_2CbXFgUpJrXpsNmhgDoLBIoyKGTs3NfupeNNVbQGODylxPrM0sFV4",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1813243107.22296,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "G_ENABLED_IDPS",
+      "value": "google",
+      "domain": ".www.shiksha.com",
+      "path": "/",
+      "expires": 1813243107.984782,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "SAinit",
+      "value": "1",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": 1778686708,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "isGdprBannerShown",
+      "value": "true",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": 1781275108,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.644275916.1778683111",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": 1813243120.566254,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "user",
+      "value": "eyJraWQiOiJZVzFlIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJzdWIiOiIxMDY0Mzk1MDgiLCJleHAiOjE4MTAyMTkxMTIsImlhdCI6MTc3ODY4MjgxMn0.F92Vb-15PtVJia6W2swutnynqtZNW6ObA4I6BHY3UQeBluDx_nklcgFEvneqGOXb-8OuHHm9chntsxT4UTEKmA",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": 1813243114.259763,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "refreshToken",
+      "value": "YW1e",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": 1813243114.259883,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "tracker",
+      "value": "17786831129Ra2T1SCsFHKRxw94",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": 1778942314.481196,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "siteview",
+      "value": "desktop",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": 1781275115.617549,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "is_mv",
+      "value": "1",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": 1778684915.617608,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "lastVisitTime",
+      "value": "1778683113",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": 1778684915.617489,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "reverification",
+      "value": "true",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_K11YYW39J9",
+      "value": "GS2.1.s1778683111$o1$g1$t1778683120$j51$l0$h0",
+      "domain": ".shiksha.com",
+      "path": "/",
+      "expires": 1813243120.574266,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://www.shiksha.com",
+      "localStorage": [
+        {
+          "name": "lastExternalReferrer",
+          "value": "empty"
+        },
+        {
+          "name": "encryptedUserId",
+          "value": "BeJTVg8U0QWe%2FUTCU63Vjae3H0JruZB8YMqqDe%2FPJxY%3D"
+        },
+        {
+          "name": "lastExternalReferrerTime",
+          "value": "1778683106069"
+        },
+        {
+          "name": "userExists",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::h",
+          "value": "1778683105945"
+        }
+      ]
+    }
+  ]
+}
