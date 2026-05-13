@@ -1,0 +1,34 @@
+{
+  "registration": {
+    "phone": "9934145230",
+    "name": "Usual Kunwar",
+    "email": "girebav282@deapad.com",
+    "educationStream": "Engineering",
+    "course": "ME",
+    "modeOfStudy": "Full Time",
+    "preferredYear": "2026"
+  },
+  "login": {
+    "email": "jhoee.coc@gmail.com"
+  },
+  "studyAbroad": {
+    "targetUniversity": "Stanford University",
+    "nthUniversityToClick": 5,
+    "nthComparisonSuggestion": 2,
+    "brochureForm": {
+      "nthCourse": 2,
+      "startYear": "2027",
+      "graduationPercentage": "88",
+      "backlogs": "0",
+      "workExperience": "0"
+    }
+  },
+  "randomSearch": [
+    { "query": "ahsdvvbdnasbh", "name": "search_ahsdvv" },
+    { "query": "';,';.;',.;','`-==-][", "name": "search_special_char" },
+    { "query": "894985973287", "name": "search_numbers" },
+    { "query": "shbas6454564';;'", "name": "search_mixed" },
+    { "query": "<script>alert(1)</script>", "name": "search_xss" },
+    { "query": "DROP TABLE exams;", "name": "search_sql_injection" }
+  ]
+}
