@@ -1,4 +1,4 @@
-const testData = require('C:/Users/ARYAN/OneDrive/Desktop/makemytrip-group5/tests/data/testData.json');
+const testData = require('../../tests/data/testData.json');
 
 class ShikshaPage {
   constructor(page) {

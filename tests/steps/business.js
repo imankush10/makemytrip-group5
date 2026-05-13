@@ -1,142 +1,142 @@
-// const { Given, When, Then, setDefaultTimeout } = require('@cucumber/cucumber');
-// const { chromium } = require('@playwright/test');
-// const { EngineeringPage } = require('../pages/businesspage');
+const { Given, When, Then, setDefaultTimeout } = require('@cucumber/cucumber');
+const { chromium } = require('@playwright/test');
+const EngineeringPage = require('../pages/businesspage');
 
-// let browser;
-// let context;
-// let page;
-// let engineering;
+let browser;
+let context;
+let page;
+let engineering;
 
 
-// Given('user launches the Shiksha website', async function () {
+Given('user launches the Shiksha website', async function () {
 
-//     browser = await chromium.launch({
+    browser = await chromium.launch({
 
-//         headless: false,
-//         slowMo: 1000
-//     });
+        headless: false,
+        slowMo: 1000
+    });
 
-//     context = await browser.newContext();
+    context = await browser.newContext();
 
-//     page = await context.newPage();
+    page = await context.newPage();
 
-//     engineering = new EngineeringPage(page);
+    engineering = new EngineeringPage(page);
 
-//     await engineering.launchWebsite();
-// });
+    await engineering.launchWebsite();
+});
 
 
-// When('user closes popup if displayed', async function () {
+When('user closes popup if displayed', async function () {
 
-//     await engineering.closePopupIfPresent();
-// });
+    await engineering.closePopupIfPresent();
+});
 
 
-// When('user hovers on Engineering menu from homepage', async function () {
+When('user hovers on Engineering menu from homepage', async function () {
 
-//     await engineering.hoverEngineeringMenu();
-// });
+    await engineering.hoverEngineeringMenu();
+});
 
 
-// When('user clicks on Top Engineering Colleges option', async function () {
+When('user clicks on Top Engineering Colleges option', async function () {
 
-//     await engineering.clickTopEngineeringColleges();
-// });
+    await engineering.clickTopEngineeringColleges();
+});
 
 
-// Then('engineering colleges page should open successfully', async function () {
+Then('engineering colleges page should open successfully', async function () {
 
-//     await engineering.verifyEngineeringPage();
-// });
+    await engineering.verifyEngineeringPage();
+});
 
 
-// When('user selects location as Delhi NCR', async function () {
+When('user selects location as Delhi NCR', async function () {
 
-//     await engineering.selectLocation();
-// });
+    await engineering.selectLocation();
+});
 
 
-// When('user selects course as B.Tech', async function () {
+When('user selects course as B.Tech', async function () {
 
-//     await engineering.selectCourse();
-// });
+    await engineering.selectCourse();
+});
 
 
-// When('user selects specialization as Computer Science Engineering', async function () {
+When('user selects specialization as Computer Science Engineering', async function () {
 
-//     await engineering.selectSpecialization();
-// });
+    await engineering.selectSpecialization();
+});
 
 
-// When('user selects college type as Private', async function () {
+When('user selects college type as Private', async function () {
 
-//     await engineering.selectCollegeType();
-// });
+    await engineering.selectCollegeType();
+});
 
 
-// When('user selects ranking filter', async function () {
+When('user selects ranking filter', async function () {
 
-//     await engineering.selectRanking();
-// });
+    await engineering.selectRanking();
+});
 
 
-// When('user clicks on Apply Filters button', async function () {
+When('user clicks on Apply Filters button', async function () {
 
-//     await engineering.applyFilters();
-// });
+    await engineering.applyFilters();
+});
 
 
-// Then('filtered engineering colleges should be displayed', async function () {
+Then('filtered engineering colleges should be displayed', async function () {
 
-//     await engineering.verifyFilteredResults();
-// });
+    await engineering.verifyFilteredResults();
+});
 
 
-// When('user clicks on first engineering college', async function () {
+When('user clicks on first engineering college', async function () {
 
-//     await engineering.openFirstCollege();
-// });
+    await engineering.openFirstCollege();
+});
 
 
-// Then('selected college details page should open', async function () {
+Then('selected college details page should open', async function () {
 
-//     await engineering.verifyCollegePage();
-// });
+    await engineering.verifyCollegePage();
+});
 
 
-// When('user verifies college overview section', async function () {
+When('user verifies college overview section', async function () {
 
-//     await engineering.verifyOverviewSection();
-// });
+    await engineering.verifyOverviewSection();
+});
 
 
-// When('user verifies fees section', async function () {
+When('user verifies fees section', async function () {
 
-//     await engineering.verifyFeesSection();
-// });
+    await engineering.verifyFeesSection();
+});
 
 
-// When('user verifies placement section', async function () {
+When('user verifies placement section', async function () {
 
-//     await engineering.verifyPlacementSection();
-// });
+    await engineering.verifyPlacementSection();
+});
 
 
-// When('user verifies admission section', async function () {
+When('user verifies admission section', async function () {
 
-//     await engineering.verifyAdmissionSection();
-// });
+    await engineering.verifyAdmissionSection();
+});
 
 
-// When('user verifies course details section', async function () {
+When('user verifies course details section', async function () {
 
-//     await engineering.verifyCourseSection();
-// });
+    await engineering.verifyCourseSection();
+});
 
 
-// Then('user should successfully validate engineering college information', async function () {
+Then('user should successfully validate engineering college information', async function () {
 
-//     console.log('Engineering college validation completed successfully');
+    console.log('Engineering college validation completed successfully');
 
-//     await browser.close();
-// });
+    await browser.close();
+});
