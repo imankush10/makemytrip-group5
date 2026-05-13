@@ -10,13 +10,13 @@ Feature: Compare MBA Colleges on Shiksha
     And I click on IIM Ahmedabad college
     And I click on the Compare button
     And I search for college <college1> in the compare box
-    And I click Compare Now
+    And I click on Compare Now
     And I click on Add College
     And I search for college <college2> in the compare box
-    And I click Compare Now
+    And I click on Compare Now
     And I click on Add College
     And I search for college <college3> in the compare box
-    And I click Compare Now
+    And I click on Compare Now
     Then I take a screenshot of the comparison page
 
     Examples:

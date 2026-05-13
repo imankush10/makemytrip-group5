@@ -36,7 +36,7 @@ When('I search for college {} in the compare box', async function (collegeName) 
   await this.comparePage.searchCollege(collegeName);
 });
 
-When('I click Compare Now', async function () {
+When('I click on Compare Now', async function () {
   await this.comparePage.clickCompareNow();
 });
 
