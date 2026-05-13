@@ -16,7 +16,7 @@ Feature: Forum questions
 
     Examples:
       | question                                                      | answer                                                                                           |
-      | What is the criter for eligibility in medical courses test? | Eligibility varies, but generally includes NEET qualification and 10+2 with required subjects. |
+      | What is the criter for eliggibility in mediccal courses test? | Eligibility varies, but generally includes NEET qualification and 10+2 with required subjects. |
 
   # Covers: TC_FQ_06 (delete), TC_FQ_07 (repost error-page bug)
   @forum @repost @bug
@@ -31,7 +31,7 @@ Feature: Forum questions
 
     Examples:
       | question                                                     |
-      | This is a test qu with deletion and reposting out oofff |
+      | This is a test qu with dellewtion and reposting out oofff |
 
   # Covers: TC_FQ_08
   @forum @negative @deletion @direct-url
@@ -46,7 +46,7 @@ Feature: Forum questions
 
     Examples:
       | question                                                  |
-      | This is a teitu question for direct URL deletion check     |
+      | This is a teitus question for direct URL deletion check     |
 
   # Covers: TC_FQ_09
   @forum @negative @deletion @cancel
@@ -59,7 +59,7 @@ Feature: Forum questions
 
     Examples:
       | question                                             |
-      | This is a test question for cancell deletion check    |
+      | This is a test question for czancell deletion check    |
 
   # Covers: TC_FQ_10
   @forum @negative @deletion @double-delete
@@ -71,7 +71,7 @@ Feature: Forum questions
 
     Examples:
       | question                                             |
-      | This is a test question for doubllee delete check      |
+      | This is a test question for dqoubllee delete check      |
 
   # Covers: TC_FQ_11
   @forum @negative @navigation @invalid-url
