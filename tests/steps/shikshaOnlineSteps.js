@@ -1,5 +1,5 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
-const { ShikshaOnlinePage } = require('C:/Users/ARYAN/OneDrive/Desktop/New folder (5)/tests/pages/ShikshaOnlinePage.js');
+const { ShikshaOnlinePage } = require('../../tests/pages/ShikshaOnlinePage.js');
 const { expect } = require('@playwright/test');
 const fs = require('fs');
 
