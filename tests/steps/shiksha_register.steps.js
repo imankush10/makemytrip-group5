@@ -13,20 +13,19 @@ const testData = JSON.parse(
 // Shared page object instance reused across steps in the same scenario
 let registerPage;
 
-Given('I navigate to the Shiksha homepage', async function () {
-    const { page } = this;
-    registerPage = new ShikshaRegisterPage(page);
-    await registerPage.navigate();
-});
+function getRegisterPage(page) {
+    if (!registerPage) {
+        registerPage = new ShikshaRegisterPage(page);
+    }
+    return registerPage;
+}
 
 When('I click on the Sign Up button', async function () {
-    const { page } = this;
-    await registerPage.clickSignUp();
+    await getRegisterPage(this.page).clickSignUp();
 });
 
 When('I enter my phone number, full name, and email address', async function () {
-    const { page } = this;
-    await registerPage.fillRegistrationDetails(
+    await getRegisterPage(this.page).fillRegistrationDetails(
         testData.phone,
         testData.name,
         testData.email
@@ -34,27 +33,23 @@ When('I enter my phone number, full name, and email address', async function () 
 });
 
 When('I accept the terms and conditions', async function () {
-    const { page } = this;
     // Tick the T&C checkbox — required before the Sign Up button becomes active
-    await registerPage.acceptTermsAndConditions();
+    await getRegisterPage(this.page).acceptTermsAndConditions();
 });
 
 When('I click the Sign Up button to proceed', async function () {
-    const { page } = this;
     // Clicks the actual submit/register button after T&C is accepted
-    await registerPage.clickRegister();
+    await getRegisterPage(this.page).clickRegister();
 });
 
 Then('I dismiss the OTP verification by closing the popup', async function () {
-    const { page } = this;
     // Close the OTP modal using the X mark as described in the requirement
-    await registerPage.closeOtpPopup();
+    await getRegisterPage(this.page).closeOtpPopup();
 });
 
 Then('I skip the OTP step', async function () {
-    const { page } = this;
     // Click the Skip link/button that appears after closing the OTP popup
-    await registerPage.skipOtpVerification();
+    await getRegisterPage(this.page).skipOtpVerification();
 });
 
 Then('I should be registered successfully on Shiksha', async function () {

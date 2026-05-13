@@ -1,3 +1,4 @@
+@shiksha_random_search
 Feature: Shiksha Random Search
   As a signed in user on Shiksha
   I want to search for random text strings

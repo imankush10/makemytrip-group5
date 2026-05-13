@@ -1,4 +1,5 @@
 
+@shiksha_register
 Feature: Shiksha Registration
   As a new visitor on shiksha.com
   I want to register on the platform
